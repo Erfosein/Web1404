@@ -1,0 +1,16 @@
+let inputs = process.argv.slice(3);
+let command = process.argv[2];
+
+console.log("Command is :",command);
+console.log("inputs :",inputs);
+console.log('------------');
+
+if(command == "sum"){
+    console.log(Number(inputs[0])+Number(inputs[1]));
+}
+else if(command == "minus"){
+    console.log(Number(inputs[0])-Number(inputs[1]));
+}
+else{
+    console.log('Error');
+}
